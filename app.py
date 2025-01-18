@@ -21,3 +21,7 @@ if __name__ == '__main__':
 
 #run
 #py app.py
+
+# Commands
+# docker build -t my-python-app .
+# запускать докер в браузере    docker run -it -p 8000:8000 my-python-app
