@@ -15,7 +15,7 @@
 
 1. Клонируйте репозиторий:
     ```bash
-    git clone https://github.com/ваш_пользователь/ваш_проект.git
+    git clone https://github.com/HadichaRaxmat/docker.git
     ```
 
 2. Перейдите в директорию проекта:
