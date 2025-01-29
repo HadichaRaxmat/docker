@@ -16,6 +16,8 @@ services:
     container_name: fastapi-swagger
     ports:
       - "8100:8100"
+    depends_on:
+      - postgres
 
   postgres:
     image: postgres:latest
