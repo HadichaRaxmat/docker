@@ -1,13 +1,21 @@
+version: '3.8'
+
 services:
   python-app:
     build:
       context: .
-    container_name: python-hello-world-container
+      dockerfile: Dockerfile
+    container_name: python-http-server
     ports:
       - "8000:8000"
-    command: python app.py
-    depends_on:
-      - postgres
+
+  swagger-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fastapi-swagger
+    ports:
+      - "8100:8100"
 
   postgres:
     image: postgres:latest
@@ -37,11 +45,8 @@ volumes:
 
 
 
-
-
-
 # docker rm mysql-container
 # docker-compose up -d
 # docker-compose down
 # docker-compose up
-# docker-compose up --build .
+# docker-compose up --build
