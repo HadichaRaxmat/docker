@@ -1,9 +1,6 @@
-FROM python:3.9-slim
-
+FROM python:3.13
 WORKDIR /app
-COPY app.py /app/
-
-RUN pip install fastapi uvicorn
-
-EXPOSE 8000 8100
+COPY . /app
+RUN pip install --upgrade pip
+RUN pip install --no-cache-dir -r requirements.txt
 CMD ["python", "app.py"]
