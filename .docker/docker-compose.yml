@@ -39,16 +39,11 @@ services:
       PGADMIN_DEFAULT_PASSWORD: admin
     ports:
       - "8080:80"
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
     depends_on:
       - postgres
 
 volumes:
   postgres_data:
-
-
-
-# docker rm mysql-container
-# docker-compose up -d
-# docker-compose down
-# docker-compose up
-# docker-compose up --build
+  pgadmin_data:
