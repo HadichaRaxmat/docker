@@ -23,15 +23,7 @@
     cd ваш_проект
     ```
 
-3. Создайте файл `requirements.txt` и добавьте зависимости:
-    ```bash
-    fastapi
-    uvicorn
-    sqlalchemy
-    asyncpg
-    ```
-
-4. Установите зависимости:
+3. Установите зависимости:
     ```bash
     pip install -r requirements.txt
     ```
@@ -46,6 +38,7 @@
 2. Приложение будет доступно по следующим адресам:
     - FastAPI: `http://localhost:8100/docs` (Swagger UI)
     - HTTP-сервер: `http://localhost:8000`
+    - pgadmin4 BD: `http://localhost:8080`
 
 ## Структура проекта
 
