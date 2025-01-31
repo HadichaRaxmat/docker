@@ -37,11 +37,14 @@ services:
       PGADMIN_DEFAULT_PASSWORD: admin
     ports:
       - "8080:80"
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
     depends_on:
       - postgres
 
 volumes:
   postgres_data:
+<<<<<<< HEAD:docker-compose.yml
 
 
 
@@ -51,3 +54,6 @@ volumes:
 # docker-compose up
 # docker-compose up --build
 # docker-compose restart
+=======
+  pgadmin_data:
+>>>>>>> BA-01-fixed/docker-url:.docker/docker-compose.yml
