@@ -44,7 +44,6 @@ services:
 
 volumes:
   postgres_data:
-<<<<<<< HEAD:docker-compose.yml
 
 
 
@@ -54,6 +53,5 @@ volumes:
 # docker-compose up
 # docker-compose up --build
 # docker-compose restart
-=======
-  pgadmin_data:
->>>>>>> BA-01-fixed/docker-url:.docker/docker-compose.yml
+
+
